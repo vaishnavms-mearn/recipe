@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row my-5">
+        <div class="col-12">
+            <div class="card-columns">
+                <div class="row">
+                        <h1 class="text-center my-4 text-primary fw-bolder">Food Details</h1>
+                    <div *ngFor="let data of allDatas" class="col-lg-4 col-md-6 col-sm-12 mb-3 ">
+                        <div class="card p-5"  style="width: 25rem;">
+                            <img class="card-img-top" src={{data.image}} alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title my-3 text-danger text-center">{{data.name}}</h5>
+                                <p class="card-text text-jsutify"><span class="fw-bolder text-success">Ingredients: </span>{{data.ingredients}}</p>
+                                <p class="card-text text-jsutify"><span class="fw-bolder text-success">Instructions: </span>{{data.instructions}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
